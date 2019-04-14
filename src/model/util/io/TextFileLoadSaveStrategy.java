@@ -1,16 +1,18 @@
-package model.util;
+package model.util.io;
 
 import java.io.*;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
 
-public class TextFileStrategy  implements LoadSaveStrategy
+//TODO: Refactor to comply with Story 2
+
+public class TextFileLoadSaveStrategy implements LoadSaveStrategy
 {
     private final String FILE_NAME = "artikel.txt";
     private final ClassLoader LOADER = this.getClass().getClassLoader();
 
-    public TextFileStrategy()
+    public TextFileLoadSaveStrategy()
     {}
 
 

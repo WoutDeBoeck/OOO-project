@@ -5,8 +5,9 @@ import model.artikel.Artikel;
 import model.artikel.ArtikelFactory;
 import model.db.DbHandler;
 import model.db.InMemoryArtikelDb;
-import model.util.LoadSaveStrategy;
-import model.util.TextFileStrategy;
+import model.util.io.LoadSaveStrategy;
+import model.util.io.TextFileLoadSaveStrategy;
+import model.util.observer.Observer;
 
 import java.io.*;
 import java.net.URISyntaxException;
@@ -62,6 +63,32 @@ public class Facade
 
     //DB
 
+    public static void registerToDatabase(Observer observer)
+    {
+        InMemoryArtikelDb db = InMemoryArtikelDb.getInstance();
+
+        db.registerObserver(observer);
+    }
+
+    public static int getCurrentStock(String code)
+    {
+        Artikel a = getArtikelByCode(code);
+
+        if(a != null)
+        {
+            return a.getAantal();
+        }
+
+        return 0;
+    }
+
+    public static int removeArtikelAmountFromDb(String code, int amount)
+    {
+        InMemoryArtikelDb db = InMemoryArtikelDb.getInstance();
+
+        return db.removeAmount(code, amount);
+    }
+
     private static LoadSaveStrategy getDbStrategy()
     {
         Properties properties = new Properties();
@@ -83,11 +110,11 @@ public class Facade
 
             if(mode.equals("tekst"))
             {
-                strategy = new TextFileStrategy();
+                strategy = new TextFileLoadSaveStrategy();
             }
             else if(mode.equals("excel"))
             {
-                //TODO: make strategy
+                //TODO: implement excel
             }
         }
         catch (IOException | URISyntaxException e)
@@ -122,15 +149,15 @@ public class Facade
         }
     }
 
-
     //View
 
-    public static void populateTable(TableView table)
+    public static void updateTable(TableView table)
     {
         InMemoryArtikelDb db = InMemoryArtikelDb.getInstance();
 
         if(table != null)
         {
+            table.getItems().removeAll(table.getItems());
             table.getItems().addAll(db.getAll());
             table.sort();
         }

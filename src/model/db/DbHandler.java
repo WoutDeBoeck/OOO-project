@@ -2,7 +2,7 @@ package model.db;
 
 import model.artikel.Artikel;
 import model.artikel.ArtikelFactory;
-import model.util.LoadSaveStrategy;
+import model.util.io.LoadSaveStrategy;
 
 public class DbHandler
 {

@@ -1,4 +1,4 @@
-package model.util;
+package model.util.io;
 
 /**
  * LoadSaveStrategy garandeerdt dat de implementerende klassen een methode voor het laden en het opslaan van gegevens zullen hebben.
