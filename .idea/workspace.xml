@@ -2,29 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/model/event/CheckOutButtonHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/util/observer/Observer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/util/observer/ObserverSubject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/ExcelPlugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/ExcelPlugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jxl_2_6_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jxl_2_6_12.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/artikel.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/converter/KortingStrategyConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/event/PriceTotalHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/event/hold/HoldButtonHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/event/hold/RestoreButtonHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/event/table/DeleteKeyHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/event/table/TableChangeListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/aankoop/Aankoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/korting/KortingStrategies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/korting/KortingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/korting/concrete/DrempelKortingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/korting/concrete/DuursteArtikelKortingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/korting/concrete/GeenKortingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/korting/concrete/GroepKortingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/util/factory/KortingFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/util/factory/io/ExcelStrategyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/util/factory/io/FactorySingleton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/util/factory/io/TextStrategyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/util/io/ExcelFileLoadSaveStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/pane/KlantMainPane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/tab/InstellingTab.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Herkansing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Herkansing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Herkansing/model/db/DbHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansing/model/db/DbHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Herkansing/model/db/InMemoryArtikelDb.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansing/model/db/InMemoryArtikelDb.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Herkansing/model/event/EnterKeyHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansing/model/event/EnterKeyHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Herkansing/model/util/LoadSaveStrategy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Herkansing/model/util/TextFileStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansing/artikel.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansing/artikel.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansing/artikel.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansing/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansing/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansing/model/artikel/Artikel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansing/model/artikel/Artikel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansing/model/event/CheckOutButtonHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansing/model/event/EnterKeyHandler.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Herkansing/model/util/facade/Facade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansing/model/util/facade/Facade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Herkansing/view/tab/ArtikelTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansing/view/tab/ArtikelTab.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansing/model/util/io/TextFileLoadSaveStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansing/model/util/io/TextFileLoadSaveStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansing/view/pane/KassaMainPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansing/view/pane/KassaMainPane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansing/view/screen/KlantView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansing/view/screen/KlantView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Herkansing/view/tab/KassaTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansing/view/tab/KassaTab.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/db/DbHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/db/DbHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/db/InMemoryArtikelDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/db/InMemoryArtikelDb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/event/EnterKeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/event/EnterKeyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/util/LoadSaveStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/util/io/LoadSaveStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/util/TextFileStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/util/io/TextFileLoadSaveStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Herkansing/view/tab/table/ArtikelTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Herkansing/view/tab/table/ArtikelTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/artikel.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/artikel/Artikel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/artikel/Artikel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/event/CheckOutButtonHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/event/input/CheckOutButtonHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/event/EnterKeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/event/input/EnterKeyHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/util/facade/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/util/facade/Facade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/tab/ArtikelTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/tab/ArtikelTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/util/io/TextFileLoadSaveStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/util/io/TextFileLoadSaveStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/pane/KassaMainPane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/pane/KassaMainPane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/screen/KlantView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/screen/KlantView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/tab/KassaTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/tab/KassaTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/tab/table/ArtikelTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/tab/table/ArtikelTable.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -121,43 +142,51 @@
     <session id="1245809763">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.102" value="2" />
+          <entry key="project.open.time.41" value="1" />
+          <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.75" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.78" value="1" />
+          <entry key="project.open.time.93" value="1" />
+          <entry key="project.open.time.98" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="MF" value="1" />
-          <entry key="class" value="5" />
-          <entry key="java" value="69" />
-          <entry key="properties" value="2" />
-          <entry key="txt" value="3" />
+          <entry key="MODULES/mdl-Herkansing" value="1" />
+          <entry key="class" value="16" />
+          <entry key="java" value="239" />
+          <entry key="properties" value="3" />
+          <entry key="txt" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="5" />
-          <entry key="JAVA" value="69" />
+          <entry key="CLASS" value="16" />
+          <entry key="JAVA" value="239" />
           <entry key="Manifest" value="1" />
-          <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Properties" value="2" />
+          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="Properties" value="3" />
+          <entry key="UML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="16" />
-          <entry key="java" value="5568" />
-          <entry key="properties" value="12" />
-          <entry key="txt" value="26" />
+          <entry key="dummy" value="20" />
+          <entry key="java" value="24799" />
+          <entry key="properties" value="15" />
+          <entry key="txt" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5568" />
-          <entry key="PLAIN_TEXT" value="42" />
-          <entry key="Properties" value="12" />
+          <entry key="JAVA" value="24799" />
+          <entry key="PLAIN_TEXT" value="50" />
+          <entry key="Properties" value="15" />
         </counts>
       </usages-collector>
     </session>
@@ -167,56 +196,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/view/tab/InstellingTab.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="496">
+              <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/util/facade/Facade.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="439">
+              <caret line="228" column="43" selection-start-line="228" selection-start-column="43" selection-end-line="228" selection-end-column="43" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#changeMode#0;class#Facade#0" />
                 <element signature="docComment;method#getArtikelByCode#0;class#Facade#0" />
+                <element signature="method#getArtikelByCode#0;class#Facade#0" />
                 <element signature="docComment;method#getDisplayArtikel#0;class#Facade#0" />
                 <element signature="method#getDisplayArtikel#0;class#Facade#0" />
                 <element signature="method#registerToDatabase#0;class#Facade#0" />
                 <element signature="method#getCurrentStock#0;class#Facade#0" />
                 <element signature="method#removeArtikelAmountFromDb#0;class#Facade#0" />
                 <element signature="method#getDbStrategy#0;class#Facade#0" />
+                <element signature="method#getDbStrategyText#0;class#Facade#0" />
                 <element signature="method#loadDb#0;class#Facade#0" />
                 <element signature="method#saveDb#0;class#Facade#0" />
+                <element signature="method#setKortingStrategy#0;class#Facade#0" />
+                <element signature="method#getKortingStrategyNames#0;class#Facade#0" />
+                <element signature="method#setTableList#0;class#Facade#0" />
+                <element signature="method#subscribeToKassaTable#0;class#Facade#0" />
                 <element signature="method#updateTable#0;class#Facade#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/db/InMemoryArtikelDb.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
-              <folding>
-                <element signature="docComment;class#InMemoryArtikelDb#0" />
-                <element signature="method#InMemoryArtikelDb#0;class#InMemoryArtikelDb#0" />
-                <element signature="method#addArtikel#0;class#InMemoryArtikelDb#0" />
-                <element signature="docComment;method#removeAmount#0;class#InMemoryArtikelDb#0" />
-                <element signature="method#removeAmount#0;class#InMemoryArtikelDb#0" />
-                <element signature="e#2325#2326#0" expanded="true" />
-                <element signature="e#2366#2367#0" expanded="true" />
-                <element signature="docComment;method#toStringArray#0;class#InMemoryArtikelDb#0" />
-                <element signature="method#toStringArray#0;class#InMemoryArtikelDb#0" />
-                <element signature="method#registerObserver#0;class#InMemoryArtikelDb#0" />
-                <element signature="method#removeObserver#0;class#InMemoryArtikelDb#0" />
-                <element signature="method#notifyObservers#0;class#InMemoryArtikelDb#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/view/tab/KassaTab.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="40" column="68" lean-forward="true" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -226,8 +241,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -243,47 +258,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/view/KassaView.java" />
-        <option value="$PROJECT_DIR$/src/view/KlantView.java" />
-        <option value="$PROJECT_DIR$/src/view/KassaMainPane.java" />
-        <option value="$PROJECT_DIR$/src/view/tab/kassaTab.java" />
-        <option value="$PROJECT_DIR$/src/view/screen/KlantView.java" />
-        <option value="$PROJECT_DIR$/src/view/screen/KassaView.java" />
-        <option value="$PROJECT_DIR$/src/model/ArtikelGroep.java" />
-        <option value="$PROJECT_DIR$/src/model/Artikel.java" />
-        <option value="$PROJECT_DIR$/src/model/util/ILoadSave.java" />
-        <option value="$PROJECT_DIR$/src/model/util/file/FileHandler.java" />
-        <option value="$PROJECT_DIR$/src/model/util/db/ILoadSave.java" />
-        <option value="$PROJECT_DIR$/src/model/util/ILoadSaveStrategy.java" />
-        <option value="$PROJECT_DIR$/src/model/util/LoadSaveStrategy.java" />
-        <option value="$PROJECT_DIR$/src/model/util/TextFileStrategy.java" />
-        <option value="$PROJECT_DIR$/src/model/event/KeyEventHandler.java" />
-        <option value="$PROJECT_DIR$/src/view/tab/TableTab.java" />
-        <option value="$PROJECT_DIR$/src/view/tab/ArtikelTable.java" />
-        <option value="$PROJECT_DIR$/src/view/pane/KassaMainPane.java" />
-        <option value="$PROJECT_DIR$/src/model/artikel/ArtikelFactory.java" />
-        <option value="$PROJECT_DIR$/src/model/util/facade/DatabaseFacade.java" />
-        <option value="$PROJECT_DIR$/resources/config.properties" />
-        <option value="$PROJECT_DIR$/src/model/artikel/Artikel.java" />
-        <option value="$PROJECT_DIR$/src/model/db/DbLoader.java" />
-        <option value="$PROJECT_DIR$/src/model/db/DbHandler.java" />
-        <option value="$PROJECT_DIR$/src/view/Main.java" />
-        <option value="$PROJECT_DIR$/src/model/event/KassaVerkoopHandler.java" />
-        <option value="$PROJECT_DIR$/src/view/tab/table/ArtikelTable.java" />
         <option value="$PROJECT_DIR$/src/model/util/observer/Observer.java" />
         <option value="$PROJECT_DIR$/src/model/util/observer/ObserverSubject.java" />
         <option value="$PROJECT_DIR$/src/model/db/InMemoryArtikelDb.java" />
-        <option value="$PROJECT_DIR$/src/view/tab/ArtikelTab.java" />
         <option value="$PROJECT_DIR$/src/model/event/CheckOutButtonHandler.java" />
-        <option value="$PROJECT_DIR$/out/production/Herkansing/artikel.txt" />
         <option value="$PROJECT_DIR$/src/model/util/io/ExcelPlugin.java" />
         <option value="$PROJECT_DIR$/src/model/util/io/ExcelStrategy.java" />
-        <option value="$PROJECT_DIR$/out/production/Herkansing/config.properties" />
         <option value="$PROJECT_DIR$/src/model/util/io/ExcelLoadSaveStrategy.java" />
-        <option value="$PROJECT_DIR$/src/model/util/facade/Facade.java" />
-        <option value="$PROJECT_DIR$/src/model/util/io/TextFileLoadSaveStrategy.java" />
+        <option value="$PROJECT_DIR$/src/view/Main.java" />
+        <option value="$PROJECT_DIR$/out/production/Herkansing/config.properties" />
+        <option value="$PROJECT_DIR$/src/model/util/io/ExcelFileLoadSaveStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/util/io/LoadSaveFactory.java" />
+        <option value="$PROJECT_DIR$/src/model/util/factory/FactorySingleton.java" />
+        <option value="$PROJECT_DIR$/src/model/util/factory/ExcelFactory.java" />
+        <option value="$PROJECT_DIR$/src/model/util/factory/ExcelStrategyFactory.java" />
+        <option value="$PROJECT_DIR$/src/model/util/factory/TextStrategyFactory.java" />
+        <option value="$PROJECT_DIR$/src/view/pane/KassaMainPane.java" />
+        <option value="$PROJECT_DIR$/src/model/event/ChoiceChangedHandler.java" />
+        <option value="$PROJECT_DIR$/src/view/tab/ArtikelTab.java" />
+        <option value="$PROJECT_DIR$/src/view/screen/KlantView.java" />
+        <option value="$PROJECT_DIR$/src/model/artikel/Artikel.java" />
+        <option value="$PROJECT_DIR$/src/model/event/TableChangeListener.java" />
+        <option value="$PROJECT_DIR$/src/view/tab/table/ArtikelTable.java" />
+        <option value="$PROJECT_DIR$/src/model/event/DeleteKeyHandler.java" />
         <option value="$PROJECT_DIR$/src/model/event/EnterKeyHandler.java" />
+        <option value="$PROJECT_DIR$/src/view/pane/KlantMainPane.java" />
+        <option value="$PROJECT_DIR$/src/model/event/PriceTotalHandler.java" />
+        <option value="$PROJECT_DIR$/src/model/util/io/TextFileLoadSaveStrategy.java" />
+        <option value="$PROJECT_DIR$/src/controller/event/HoldButtonHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/event/hold/HoldButtonHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/event/hold/RestoreButtonHandler.java" />
         <option value="$PROJECT_DIR$/src/view/tab/KassaTab.java" />
+        <option value="$PROJECT_DIR$/src/model/kassabon/Kassabon.java" />
+        <option value="$PROJECT_DIR$/src/model/korting/KortingType.java" />
+        <option value="$PROJECT_DIR$/src/model/korting/KortingStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/korting/NoKortingStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/korting/DuursteArtikelKortingStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/korting/GroepKortingStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/korting/DrempelKortingStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/korting/concrete/NoKortingStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/korting/concrete/GroepKortingStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/korting/concrete/DrempelKortingStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/korting/concrete/DuursteArtikelKortingStrategy.java" />
+        <option value="$PROJECT_DIR$/src/model/util/factory/KortingFactory.java" />
+        <option value="$PROJECT_DIR$/src/model/aankoop/Aankoop.java" />
+        <option value="$PROJECT_DIR$/src/controller/converter/KortingConverter.java" />
+        <option value="$PROJECT_DIR$/src/controller/converter/KortingStrategyConverter.java" />
+        <option value="$PROJECT_DIR$/src/controller/event/input/CheckOutButtonHandler.java" />
+        <option value="$PROJECT_DIR$/out/production/Herkansing/artikel.txt" />
+        <option value="$PROJECT_DIR$/src/model/util/facade/Facade.java" />
+        <option value="$PROJECT_DIR$/src/model/korting/KortingStrategies.java" />
+        <option value="$PROJECT_DIR$/src/view/tab/InstellingTab.java" />
       </list>
     </option>
   </component>
@@ -295,10 +320,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="9" />
-    <option name="y" value="-8" />
-    <option name="width" value="1612" />
-    <option name="height" value="876" />
+    <option name="x" value="-7" />
+    <option name="width" value="814" />
+    <option name="height" value="907" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -309,7 +333,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -320,25 +343,13 @@
             <path>
               <item name="OOO-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="OOO-project" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OOO-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OOO-project" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OOO-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OOO-project" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="Herkansing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OOO-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="OOO-project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OOO-project" type="b2602c69:ProjectViewProjectNode" />
@@ -351,29 +362,28 @@
               <item name="OOO-project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="event" type="462c0819:PsiDirectoryNode" />
+              <item name="korting" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OOO-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="OOO-project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OOO-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="OOO-project" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="tab" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OOO-project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="facade" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -387,7 +397,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555252648667" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565184042351" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../jxl-2.6.12.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -398,6 +408,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Wout\Documents\Personal Files\School\UCLL\Tweede Jaar\Semester 1\OOO\Herkansing\OOO-project\resources" />
+      <recent name="C:\Users\Wout\Documents\Personal Files\School\UCLL\Tweede Jaar\Semester 1\OOO\Herkansing\OOO-project\out\production\Herkansing" />
       <recent name="C:\Users\Wout\Documents\Personal Files\School\UCLL\Tweede Jaar\Semester 1\OOO\Herkansing\OOO-project\src\model\util\io" />
       <recent name="C:\Users\Wout\Documents\Personal Files\School\UCLL\Tweede Jaar\Semester 1\OOO\Herkansing\resources" />
       <recent name="C:\Users\Wout\Documents\Personal Files\School\UCLL\Tweede Jaar\Semester 1\OOO\Herkansing\src\view" />
@@ -415,7 +427,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -430,6 +442,20 @@
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="model.aankoop.Main" />
+      <module name="Herkansing" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.aankoop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -497,8 +523,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -520,11 +551,27 @@
       <workItem from="1555079567368" duration="1606000" />
       <workItem from="1555083157590" duration="2088000" />
       <workItem from="1555235921296" duration="12847000" />
+      <workItem from="1563527083643" duration="15000" />
+      <workItem from="1563702932082" duration="4277000" />
+      <workItem from="1564142875585" duration="9112000" />
+      <workItem from="1564229655438" duration="7344000" />
+      <workItem from="1564754279882" duration="5788000" />
+      <workItem from="1565080507075" duration="17570000" />
+      <workItem from="1565167391337" duration="10506000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48722000" />
+    <option name="totallyTimeSpent" value="103334000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="916" extended-state="6" />
@@ -533,7 +580,7 @@
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.6703755" visible="true" weight="0.17673522" />
+      <window_info content_ui="combo" id="Project" order="4" sideWeight="0.6703755" visible="true" weight="0.19280206" />
       <window_info id="Structure" order="5" weight="0.24933687" />
       <window_info id="Favorites" order="6" />
       <window_info anchor="bottom" id="Terminal" order="0" />
@@ -544,7 +591,7 @@
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39897698" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="TODO" order="8" weight="0.3196931" />
       <window_info anchor="bottom" id="Application Servers" order="9" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Problems" order="11" />
@@ -563,41 +610,6 @@
       <window_info anchor="right" id="Palette" order="8" />
       <window_info anchor="right" id="Maven Projects" order="9" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="UI Designer" order="1" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" sideWeight="0.6703755" visible="true" weight="0.48143235" />
-      <window_info id="Structure" order="5" weight="0.24933687" />
-      <window_info id="Favorites" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="0" />
-      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.32992327" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.3324709" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.39897698" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="8" />
-      <window_info anchor="bottom" id="Application Servers" order="9" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Problems" order="11" />
-      <window_info anchor="bottom" id="Changes" order="12" />
-      <window_info anchor="bottom" id="Profiler" order="13" />
-      <window_info anchor="bottom" id="Event Log" order="14" />
-      <window_info anchor="bottom" id="Messages" order="15" weight="0.32992327" />
-      <window_info anchor="right" id="Palette&#9;" order="0" />
-      <window_info anchor="right" id="Theme Preview" order="1" />
-      <window_info anchor="right" id="Capture Analysis" order="2" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
-      <window_info anchor="right" id="JetGradle" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -614,248 +626,107 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml" />
-    <entry file="jar://$PROJECT_DIR$/../ExcelPlugin.jar!/excel/ExcelPlugin.java" />
-    <entry file="file://$PROJECT_DIR$/src/model/ArtikelGroep.java" />
-    <entry file="file://$PROJECT_DIR$/src/model/util/file/FileHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/model/artikel/ArtikelFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/model/util/io/LoadSaveFactory.java" />
+    <entry file="file://$PROJECT_DIR$/src/model/util/io/ExcelFileLoadSaveStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="65" column="46" selection-start-line="65" selection-start-column="46" selection-end-line="65" selection-end-column="46" />
+        <state relative-caret-position="136">
+          <caret line="17" column="72" lean-forward="true" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/config.properties">
+    <entry file="file://$PROJECT_DIR$/src/model/util/factory/ExcelFactory.java" />
+    <entry file="file://$PROJECT_DIR$/src/model/event/ChoiceChangedHandler.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/scene/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
+        <state relative-caret-position="233">
+          <caret line="8349" selection-start-line="8349" selection-end-line="8349" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/artikel.txt">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/event/Event.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
+        <state relative-caret-position="140">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/artikel/Artikel.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/scene/input/InputEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="135" selection-start-line="135" selection-end-line="135" />
-          <folding>
-            <element signature="method#Artikel#0;class#Artikel#0" />
-            <element signature="method#setCode#0;class#Artikel#0" />
-            <element signature="method#setOmschrijving#0;class#Artikel#0" />
-            <element signature="method#setGroep#0;class#Artikel#0" />
-            <element signature="method#setPrijs#0;class#Artikel#0" />
-            <element signature="method#setAantal#0;class#Artikel#0" />
-          </folding>
+        <state relative-caret-position="275">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/screen/KassaView.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/scene/input/KeyEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="48" lean-forward="true" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+        <state relative-caret-position="218">
+          <caret line="445" selection-start-line="445" selection-end-line="445" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/screen/KlantView.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/event/EventType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        <state relative-caret-position="471">
+          <caret line="164" column="7" lean-forward="true" selection-start-line="164" selection-start-column="7" selection-end-line="164" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/Main.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/jre/lib/rt.jar!/sun/misc/FloatingDecimal.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/event/KassaVerkoopHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/scene/control/TableColumn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="397" lean-forward="true" selection-start-line="397" selection-end-line="397" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/util/observer/Observer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/util/observer/ObserverSubject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/pane/KassaMainPane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/collections/FXCollections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="340" selection-start-line="340" selection-end-line="340" />
-          <folding>
-            <element signature="e#11614#11615#0" expanded="true" />
-            <element signature="e#11668#11669#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/collections/ModifiableObservableListBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="154" selection-start-line="154" selection-end-line="154" />
+        <state relative-caret-position="295">
+          <caret line="296" selection-start-line="296" selection-end-line="296" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/beans/property/ObjectPropertyBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
+        <state relative-caret-position="191">
           <caret line="131" selection-start-line="131" selection-end-line="131" />
-          <folding>
-            <element signature="e#3863#3864#0" expanded="true" />
-            <element signature="e#3904#3905#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/scene/control/TableView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="836" selection-start-line="836" selection-end-line="836" />
-          <folding>
-            <element signature="e#59293#59294#0" expanded="true" />
-            <element signature="e#59325#59326#0" expanded="true" />
-          </folding>
+          <caret line="843" column="47" selection-start-line="843" selection-start-column="47" selection-end-line="843" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/collections/ListChangeBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/view/screen/KlantView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="239" selection-start-line="239" selection-end-line="239" />
-          <folding>
-            <element signature="e#5762#5763#0" expanded="true" />
-            <element signature="e#5794#5795#0" expanded="true" />
-            <element signature="e#19641#19642#0" expanded="true" />
-            <element signature="e#19669#19670#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="20" column="52" lean-forward="true" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/javafx-src.zip!/javafx/collections/ObservableListBase.java">
+    <entry file="file://$PROJECT_DIR$/src/model/artikel/ArtikelFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="239" selection-start-line="239" selection-end-line="239" />
-          <folding>
-            <element signature="e#5179#5180#0" expanded="true" />
-            <element signature="e#5233#5234#0" expanded="true" />
-            <element signature="e#7418#7419#0" expanded="true" />
-            <element signature="e#7465#7466#0" expanded="true" />
-            <element signature="e#7869#7870#0" expanded="true" />
-            <element signature="e#7912#7913#0" expanded="true" />
-            <element signature="e#8250#8251#0" expanded="true" />
-            <element signature="e#8291#8292#0" expanded="true" />
-            <element signature="e#9456#9457#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="241">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/tab/table/ArtikelTable.java">
+    <entry file="file://$PROJECT_DIR$/src/view/pane/KlantMainPane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/tab/ArtikelTab.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#592#593#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/event/CheckOutButtonHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="369">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/Herkansing/artikel.txt">
+    <entry file="file://$PROJECT_DIR$/src/model/util/io/TextFileLoadSaveStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        <state relative-caret-position="68">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jxl-2.6.12.jar!/jxl/WorkbookSettings.class">
+    <entry file="file://$PROJECT_DIR$/src/controller/event/PriceTotalHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="49" column="11" selection-start-line="49" selection-start-column="11" selection-end-line="49" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/util/io/ExcelPlugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="45" column="43" lean-forward="true" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#write#0;class#ExcelPlugin#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../jxl-2.6.12.jar!/jxl/read/biff/File.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2996">
-          <caret line="274" column="11" selection-start-line="274" selection-start-column="11" selection-end-line="274" selection-end-column="11" />
+        <state relative-caret-position="153">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -870,97 +741,244 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/util/io/LoadSaveStrategy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../ExcelPlugin.jar!/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../ExcelPlugin.jar!/excel/ExcelPlugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/util/io/ExcelLoadSaveStrategy.java">
+    <entry file="file://$PROJECT_DIR$/src/view/screen/KassaView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/pane/KassaMainPane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/event/hold/RestoreButtonHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/event/hold/HoldButtonHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/event/table/DeleteKeyHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/event/table/TableChangeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/Herkansing/config.properties">
+    <entry file="file://$PROJECT_DIR$/src/view/tab/ArtikelTab.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
+        <state relative-caret-position="238">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/util/io/TextFileLoadSaveStrategy.java">
+    <entry file="file://$PROJECT_DIR$/src/view/tab/KassaTab.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="204">
+          <caret line="33" column="38" lean-forward="true" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/tab/table/ArtikelTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="28" column="77" lean-forward="true" selection-start-line="28" selection-start-column="77" selection-end-line="28" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/kassabon/Kassabon.java" />
+    <entry file="file://$PROJECT_DIR$/src/model/korting/KortingType.java" />
+    <entry file="file://$PROJECT_DIR$/src/model/artikel/Artikel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+          <folding>
+            <element signature="e#2548#2549#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/korting/KortingStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="52" lean-forward="true" selection-start-line="15" selection-start-column="52" selection-end-line="15" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/util/facade/Facade.java">
+    <entry file="file://$PROJECT_DIR$/resources/artikel.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="3081" selection-start-line="3081" selection-end-line="3081" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/util/factory/io/ExcelStrategyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/util/factory/io/FactorySingleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/util/factory/io/TextStrategyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="method#TextStrategyFactory#0;class#TextStrategyFactory#0" />
+            <element signature="method#getInstance#0;class#TextStrategyFactory#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/korting/concrete/GeenKortingStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="method#calculateKorting#0;class#NoKortingStrategy#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/korting/concrete/GroepKortingStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;method#getArtikelByCode#0;class#Facade#0" />
-            <element signature="docComment;method#getDisplayArtikel#0;class#Facade#0" />
-            <element signature="method#getDisplayArtikel#0;class#Facade#0" />
-            <element signature="method#registerToDatabase#0;class#Facade#0" />
-            <element signature="method#getCurrentStock#0;class#Facade#0" />
-            <element signature="method#removeArtikelAmountFromDb#0;class#Facade#0" />
-            <element signature="method#getDbStrategy#0;class#Facade#0" />
-            <element signature="method#loadDb#0;class#Facade#0" />
-            <element signature="method#saveDb#0;class#Facade#0" />
-            <element signature="method#updateTable#0;class#Facade#0" />
+            <element signature="method#GroepKortingStrategy#0;class#GroepKortingStrategy#0" />
+            <element signature="method#setKortingspercentage#0;class#GroepKortingStrategy#0" />
+            <element signature="method#setGroep#0;class#GroepKortingStrategy#0" />
+            <element signature="method#calculateKorting#0;class#GroepKortingStrategy#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/db/InMemoryArtikelDb.java">
+    <entry file="file://$PROJECT_DIR$/src/model/korting/concrete/DrempelKortingStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="238">
+          <caret line="14" column="67" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
           <folding>
-            <element signature="docComment;class#InMemoryArtikelDb#0" />
-            <element signature="method#InMemoryArtikelDb#0;class#InMemoryArtikelDb#0" />
-            <element signature="method#addArtikel#0;class#InMemoryArtikelDb#0" />
-            <element signature="docComment;method#removeAmount#0;class#InMemoryArtikelDb#0" />
-            <element signature="method#removeAmount#0;class#InMemoryArtikelDb#0" />
-            <element signature="e#2325#2326#0" expanded="true" />
-            <element signature="e#2366#2367#0" expanded="true" />
-            <element signature="docComment;method#toStringArray#0;class#InMemoryArtikelDb#0" />
-            <element signature="method#toStringArray#0;class#InMemoryArtikelDb#0" />
-            <element signature="method#registerObserver#0;class#InMemoryArtikelDb#0" />
-            <element signature="method#removeObserver#0;class#InMemoryArtikelDb#0" />
-            <element signature="method#notifyObservers#0;class#InMemoryArtikelDb#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#DrempelKortingStrategy#0;class#DrempelKortingStrategy#0" />
+            <element signature="method#setKortingspercentage#0;class#DrempelKortingStrategy#0" />
+            <element signature="method#setDrempel#0;class#DrempelKortingStrategy#0" />
+            <element signature="method#calculateKorting#0;class#DrempelKortingStrategy#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/event/EnterKeyHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/model/korting/concrete/DuursteArtikelKortingStrategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="86" column="80" lean-forward="true" selection-start-line="86" selection-start-column="80" selection-end-line="86" selection-end-column="80" />
+        <state relative-caret-position="221">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setKortingspercentage#0;class#DuursteArtikelKortingStrategy#0" />
+            <element signature="method#calculateKorting#0;class#DuursteArtikelKortingStrategy#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/util/factory/KortingFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getStrategy#0;class#KortingFactory#0" />
+            <element signature="method#getStrategy#1;class#KortingFactory#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/aankoop/Aankoop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="128" column="27" selection-start-line="128" selection-start-column="27" selection-end-line="128" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="46" lean-forward="true" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/Herkansing/artikel.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/event/input/CheckOutButtonHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/converter/KortingStrategyConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#fromString#0;class#KortingStrategyConverter#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/event/input/EnterKeyHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="67" column="58" lean-forward="true" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#EnterKeyHandler#0;class#EnterKeyHandler#0" />
@@ -968,10 +986,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/tab/KassaTab.java">
+    <entry file="uml://MODULES/mdl-Herkansing">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>MODULES</ID>
+          <OriginalElement>mdl-Herkansing</OriginalElement>
+          <nodes>
+            <node x="" y="">mdl-Herkansing</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="71.0" y="14.5" />
+          <SelectedNodes />
+          <Categories />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/korting/KortingStrategies.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="40" column="68" lean-forward="true" selection-start-line="40" selection-start-column="68" selection-end-line="40" selection-end-column="68" />
+        <state relative-caret-position="447">
+          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#KortingStrategies#0;class#KortingStrategies#0" />
+            <element signature="method#toString#0;class#KortingStrategies#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/util/facade/Facade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="228" column="43" selection-start-line="228" selection-start-column="43" selection-end-line="228" selection-end-column="43" />
+          <folding>
+            <element signature="method#changeMode#0;class#Facade#0" />
+            <element signature="docComment;method#getArtikelByCode#0;class#Facade#0" />
+            <element signature="method#getArtikelByCode#0;class#Facade#0" />
+            <element signature="docComment;method#getDisplayArtikel#0;class#Facade#0" />
+            <element signature="method#getDisplayArtikel#0;class#Facade#0" />
+            <element signature="method#registerToDatabase#0;class#Facade#0" />
+            <element signature="method#getCurrentStock#0;class#Facade#0" />
+            <element signature="method#removeArtikelAmountFromDb#0;class#Facade#0" />
+            <element signature="method#getDbStrategy#0;class#Facade#0" />
+            <element signature="method#getDbStrategyText#0;class#Facade#0" />
+            <element signature="method#loadDb#0;class#Facade#0" />
+            <element signature="method#saveDb#0;class#Facade#0" />
+            <element signature="method#setKortingStrategy#0;class#Facade#0" />
+            <element signature="method#getKortingStrategyNames#0;class#Facade#0" />
+            <element signature="method#setTableList#0;class#Facade#0" />
+            <element signature="method#subscribeToKassaTable#0;class#Facade#0" />
+            <element signature="method#updateTable#0;class#Facade#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/tab/InstellingTab.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

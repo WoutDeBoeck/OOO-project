@@ -1,8 +1,9 @@
-package model.event;
+package controller.event.input;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.TableView;
+import model.aankoop.Aankoop;
 import model.artikel.Artikel;
 import model.util.facade.Facade;
 
@@ -40,6 +41,10 @@ public class CheckOutButtonHandler implements EventHandler<ActionEvent>
         {
             Facade.removeArtikelAmountFromDb(entry.getKey(), entry.getValue());
         }
+
+        Aankoop aankoop = new Aankoop(table.getItems(), Facade.getKortingStrategy());
+
+        aankoop.printKassaBon();
 
         table.getItems().removeAll(table.getItems());
     }

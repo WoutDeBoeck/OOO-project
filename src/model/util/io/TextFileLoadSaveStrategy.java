@@ -5,8 +5,6 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
 
-//TODO: Refactor to comply with Story 2
-
 public class TextFileLoadSaveStrategy implements LoadSaveStrategy
 {
     private final String FILE_NAME = "artikel.txt";

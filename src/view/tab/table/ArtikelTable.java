@@ -23,11 +23,11 @@ public class ArtikelTable extends TableView
         prijsColumn = new TableColumn<>("Prijs");
         aantalColumn = new TableColumn<>("Aantal");
 
-        codeColumn.setMinWidth(150);
-        omschrijvingColumn.setMinWidth(150);
-        groepColumn.setMinWidth(150);
-        prijsColumn.setMinWidth(150);
-        aantalColumn.setMinWidth(149);
+        codeColumn.prefWidthProperty().bind(this.widthProperty().divide(5));
+        omschrijvingColumn.prefWidthProperty().bind(this.widthProperty().divide(5));
+        groepColumn.prefWidthProperty().bind(this.widthProperty().divide(5));
+        prijsColumn.prefWidthProperty().bind(this.widthProperty().divide(5));
+        aantalColumn.prefWidthProperty().bind(this.widthProperty().divide(5));
 
         codeColumn.setCellValueFactory(new PropertyValueFactory<>("code"));
         omschrijvingColumn.setCellValueFactory(new PropertyValueFactory<>("omschrijving"));

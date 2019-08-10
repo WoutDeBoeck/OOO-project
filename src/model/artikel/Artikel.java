@@ -140,4 +140,18 @@ public class Artikel implements Comparable<Artikel>
     {
         return omschrijving.compareTo(o.getOmschrijving());
     }
+
+    @Override
+    public boolean equals(Object obj)
+    {
+        if(obj instanceof Artikel)
+        {
+            if(((Artikel) obj).getOmschrijving().equals(getOmschrijving()) && ((Artikel) obj).getCode().equals(getCode()) && ((Artikel) obj).getGroep().equals(getGroep()))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }

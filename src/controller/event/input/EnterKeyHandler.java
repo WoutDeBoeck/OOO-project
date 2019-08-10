@@ -1,8 +1,7 @@
-package model.event;
+package controller.event.input;
 
 import javafx.event.EventHandler;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
@@ -14,18 +13,12 @@ import model.util.facade.Facade;
 public class EnterKeyHandler implements EventHandler<KeyEvent>
 {
     private TableView table;
-    private Label prijsTotaal;
 
-    public EnterKeyHandler(TableView table, Label prijsTotaal)
+    public EnterKeyHandler(TableView table)
     {
         if(table != null)
         {
             this.table = table;
-        }
-
-        if(prijsTotaal != null)
-        {
-            this.prijsTotaal = prijsTotaal;
         }
     }
 
@@ -62,7 +55,6 @@ public class EnterKeyHandler implements EventHandler<KeyEvent>
                     {
                         if (((Artikel) o).getCode().equals(code))
                         {
-
                             alreadyPresent++;
                         }
                     }
@@ -74,17 +66,6 @@ public class EnterKeyHandler implements EventHandler<KeyEvent>
                         if (display != null)
                         {
                             table.getItems().add(display);
-
-                            double prijsTotaal = 0.0;
-
-                            for (Object o : table.getItems())
-                            {
-                                prijsTotaal += ((Artikel) o).getPrijs();
-                            }
-
-                            String totaalString = String.format("%.2f", prijsTotaal);
-
-                            this.prijsTotaal.setText("Totaal: " + totaalString);
                             table.sort();
                         }
                     }
