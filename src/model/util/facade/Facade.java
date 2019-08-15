@@ -3,6 +3,7 @@ package model.util.facade;
 import controller.converter.KortingStrategyConverter;
 import javafx.collections.ObservableList;
 import javafx.scene.control.TableView;
+import model.verkoop.Verkoop;
 import model.artikel.Artikel;
 import model.artikel.ArtikelFactory;
 import model.db.DbHandler;
@@ -27,6 +28,8 @@ public class Facade
     private static ObservableList tableList;
 
     private static KortingStrategies strategy = KortingStrategies.GEEN_KORTING;
+    private static double kortingArgument = 0.0;
+    private static Object extraArgument = null;
 
     //Properties
     public static void changeMode(String mode)
@@ -218,10 +221,24 @@ public class Facade
 
     //Korting
 
+    public static void setKortingArgument(double korting)
+    {
+        kortingArgument = korting;
+        System.out.println(kortingArgument);
+    }
+
+    public static void setExtraArgument(Object extra)
+    {
+        extraArgument = extra;
+        System.out.println(extraArgument);
+    }
+
     public static void setKortingStrategy(String name)
     {
         KortingStrategyConverter converter = new KortingStrategyConverter();
         strategy = converter.fromString(name);
+
+        System.out.println(strategy);
     }
 
     public static int getKortingArgumentCount()
@@ -231,7 +248,23 @@ public class Facade
 
     public static KortingStrategy getKortingStrategy()
     {
-        return KortingFactory.getStrategy(strategy);
+        KortingStrategy kortingStrategy;
+
+        if(kortingArgument != 0.0 && extraArgument != null)
+        {
+            kortingStrategy = KortingFactory.getStrategy(strategy, kortingArgument, extraArgument);
+        }
+        else if(kortingArgument != 0.0)
+        {
+            kortingStrategy = KortingFactory.getStrategy(strategy, kortingArgument);
+        }
+        else
+        {
+            kortingStrategy = KortingFactory.getStrategy(strategy);
+        }
+
+
+        return kortingStrategy;
     }
 
     public static String[] getKortingStrategyNames()
@@ -277,5 +310,14 @@ public class Facade
             table.getItems().addAll(db.getAll());
             table.sort();
         }
+    }
+
+    //Verkoop
+
+    public static Verkoop createAankoop()
+    {
+        Verkoop verkoop = new Verkoop(tableList, getKortingStrategy());
+
+        return verkoop;
     }
 }

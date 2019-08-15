@@ -3,7 +3,7 @@ package view.tab;
 import controller.event.*;
 import controller.event.hold.HoldButtonHandler;
 import controller.event.hold.RestoreButtonHandler;
-import controller.event.input.CheckOutButtonHandler;
+import controller.event.input.CheckOutHandler;
 import controller.event.input.EnterKeyHandler;
 import controller.event.table.DeleteKeyHandler;
 import javafx.collections.FXCollections;
@@ -15,6 +15,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import model.util.facade.Facade;
@@ -34,6 +35,7 @@ public class KassaTab extends Tab
     private ArtikelTable artikelLijst;
     private ObservableList holdLijst;
 
+    private HBox payButtonBox;
 
     public KassaTab()
     {
@@ -78,18 +80,59 @@ public class KassaTab extends Tab
         Facade.setTableList(artikelLijst.getItems());
 
         EnterKeyHandler enterHandler = new EnterKeyHandler(artikelLijst);
-        CheckOutButtonHandler checkOutButtonHandler = new CheckOutButtonHandler(artikelLijst);
 
         input.addEventFilter(KeyEvent.KEY_PRESSED, enterHandler);
-        finish.setOnAction(checkOutButtonHandler);
+
+        finish.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> revealPaymentOptions());
 
         input.setPrefWidth(670);
 
         controlBox.getChildren().addAll(input, finish);
-        mainBox.getChildren().addAll(prijsTotaal, holdBox, artikelLijst, controlBox);
+
+        //Payment
+
+        payButtonBox = new HBox(30);
+
+        CheckOutHandler checkOutHandler = new CheckOutHandler(artikelLijst);
+
+        Button betaald = new Button("Betaald");
+        betaald.setPrefSize(200, 80);
+
+        betaald.setOnAction(checkOutHandler);
+
+        Button annuleer = new Button("Annuleer");
+        annuleer.prefWidthProperty().bind(betaald.widthProperty());
+        annuleer.prefHeightProperty().bind(betaald.heightProperty());
+
+        betaald.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> hidePaymentOptions());
+        annuleer.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> hidePaymentOptions());
+        annuleer.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> resetVerkoop());
+
+        payButtonBox.getChildren().addAll(betaald, annuleer);
+        payButtonBox.setAlignment(Pos.CENTER);
+
+        mainBox.getChildren().addAll(prijsTotaal, holdBox, artikelLijst, payButtonBox, controlBox);
 
         controlBox.setPrefHeight(60);
 
         this.setContent(mainBox);
+        hidePaymentOptions();
+    }
+
+    private void resetVerkoop()
+    {
+        artikelLijst.getItems().clear();
+    }
+
+    private void revealPaymentOptions()
+    {
+        controlBox.setVisible(false);
+        payButtonBox.setVisible(true);
+    }
+
+    private void hidePaymentOptions()
+    {
+        payButtonBox.setVisible(false);
+        controlBox.setVisible(true);
     }
 }

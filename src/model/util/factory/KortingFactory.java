@@ -5,6 +5,7 @@ import model.korting.KortingStrategy;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Parameter;
 
 public class KortingFactory
 {
@@ -21,13 +22,13 @@ public class KortingFactory
 
             try
             {
-
                 KortingStrategy returnStrategy = null;
 
                 if(aux != null)
                 {
-                    Constructor constructor = usedClass.getConstructor(korting.getClass(), aux.getClass());
-                    returnStrategy = (KortingStrategy) constructor.newInstance(korting, aux);
+                    Parameter p = usedClass.getConstructors()[0].getParameters()[usedClass.getConstructors()[0].getParameters().length - 1];
+                    Constructor constructor = usedClass.getConstructor(korting.getClass(), p.getType());
+                    returnStrategy = (KortingStrategy) constructor.newInstance(korting, p.getType().cast(aux));
                 }
                 else if(korting != null)
                 {

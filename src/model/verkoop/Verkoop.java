@@ -1,21 +1,20 @@
-package model.aankoop;
+package model.verkoop;
 
 import model.artikel.Artikel;
 import model.artikel.ArtikelFactory;
 import model.korting.*;
 import model.korting.concrete.GeenKortingStrategy;
-import model.util.factory.KortingFactory;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Aankoop
+public class Verkoop
 {
     private List<Artikel> artikels;
     private KortingStrategy kortingStrategy;
 
 
-    public Aankoop(List artikels, KortingStrategy strategy)
+    public Verkoop(List artikels, KortingStrategy strategy)
     {
         setArtikels(artikels);
         rearangeArtikels();
@@ -71,7 +70,7 @@ public class Aankoop
 
 
     /**
-     * Geeft de totaalprijs van alle Artikels in deze Aankoop terug.
+     * Geeft de totaalprijs van alle Artikels in deze Verkoop terug.
      */
     public double getTotaalPrijs()
     {
@@ -86,7 +85,7 @@ public class Aankoop
     }
 
     /**
-     * Geeft de totaalprijs van alle Artikels, inclusief korting, in deze Aankoop terug.
+     * Geeft de totaalprijs van alle Artikels, inclusief korting, in deze Verkoop terug.
      */
     public double getKortingPrijs()
     {
@@ -142,8 +141,8 @@ class Main
         KortingStrategy strategy2 = KortingFactory.getStrategy(KortingStrategies.DREMPELKORTING, 5.0, 100.0);
         KortingStrategy strategy3 = KortingFactory.getStrategy(KortingStrategies.GROEPKORTING, 5.0, "gr2");
 
-        Aankoop aankoop = new Aankoop(list, strategy1);
+        Verkoop verkoop = new Verkoop(list, strategy1);
 
-        aankoop.printKassaBon();
+        verkoop.printKassaBon();
     }
 }*/

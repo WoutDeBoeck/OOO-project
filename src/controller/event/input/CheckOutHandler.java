@@ -3,19 +3,19 @@ package controller.event.input;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.TableView;
-import model.aankoop.Aankoop;
+import model.verkoop.Verkoop;
 import model.artikel.Artikel;
 import model.util.facade.Facade;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class CheckOutButtonHandler implements EventHandler<ActionEvent>
+public class CheckOutHandler implements EventHandler<ActionEvent>
 {
     private TableView table;
 
 
-    public CheckOutButtonHandler(TableView table)
+    public CheckOutHandler(TableView table)
     {
         this.table = table;
     }
@@ -42,9 +42,7 @@ public class CheckOutButtonHandler implements EventHandler<ActionEvent>
             Facade.removeArtikelAmountFromDb(entry.getKey(), entry.getValue());
         }
 
-        Aankoop aankoop = new Aankoop(table.getItems(), Facade.getKortingStrategy());
-
-        aankoop.printKassaBon();
+        //TODO: display total and korting
 
         table.getItems().removeAll(table.getItems());
     }
